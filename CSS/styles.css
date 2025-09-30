@@ -1,1 +1,122 @@
+/*
+================================
+1. ESTILOS BASE Y CONTENEDOR (Gris/Blanco/Rosa Suave)
+================================
+*/
+body {
+    font-family: 'Roboto', sans-serif; 
+    /* Fondo degradado: Rosa muy suave a blanco roto */
+    background: linear-gradient(135deg, #f7f7f7 0%, #fdebeb 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card-container {
+    background-color: white; /* Blanco puro para la carta */
+    padding: 40px;
+    border-radius: 15px;
+    /* Sombra elegante en gris claro */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+/*
+================================
+2. ENCABEZADO Y FIRMA (Rosa Fuerte/Cursiva)
+================================
+*/
+.card-header h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5em;
+    /* Rosa Fuerte/Intenso */
+    color: #e91e63; 
+    border-right: .15em solid #e91e63; 
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+}
+
+/* Cuerpo de la carta (Gris Neutro) */
+.card-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444; /* Gris oscuro para fácil lectura */
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Pie de página y firma */
+.card-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Línea separadora gris claro */
+    text-align: right;
+}
+
+.signature {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.8em;
+    color: #e91e63; /* Rosa Fuerte para la firma */
+    margin-top: -10px !important;
+}
+
+/*
+================================
+3. BOTÓN Y MENSAJE SECRETO (Rosa/Blanco)
+================================
+*/
+#revealButton {
+    background-color: #f06292; /* Rosa intermedio para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#revealButton:hover {
+    background-color: #e91e63; /* Rosa más oscuro al pasar el ratón */
+}
+
+/* Mensaje oculto */
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    padding: 0 20px;
+}
+
+.visible {
+    max-height: 500px; 
+    opacity: 1;
+    padding: 20px;
+    border-top: 1px dashed #f0b0b0; /* Línea de puntos rosa suave */
+    margin-top: 20px;
+}
+
+.secret-text {
+    font-style: italic;
+    color: #888 !important; /* Texto secreto en gris para un toque de misterio */
+    text-align: center !important;
+}
+
+/* Imagen especial */
+.special-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 

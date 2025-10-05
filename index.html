@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💌 Una Carta para Ti... Mi Gabito <3</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>💌 Una Carta para Ti</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card-container" id="cardContainer">
-        <header class="card-header">
-            <h1 id="header-text"></h1>
-        </header>
 
-        <section class="card-content">
-            <p>Mi amor,</p>
-            
-            <p>
-                Desde el día que te conocí, mi mundo se llenó de un color que no sabía que existía. No hay día en que tu risa, tu inteligencia y tu bondad no me dejen sin aliento. Eres el recuerdo más hermoso que tengo y la promesa de un futuro que no puedo esperar a vivir.
-            </p>
+    <nav class="navbar">
+        <div class="nav-brand">Cartita-Gabito</div>
+        <ul class="nav-links">
+            <li><a href="#carta-section" class="nav-active">Inicio</a></li>
+            <li><a href="https://ejemplo.com/playlist" target="_blank">Playlists para ti &lt;3</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content">
+        <section id="carta-section" class="card-container">
+            <header class="card-header">
+                <h1 id="header-text"></h1>
+            </header>
 
-            <button id="revealButton">❤️ Revelar Cartita ❤️</button>
-
-            <div id="hiddenMessage" class="hidden">
-                <p class="secret-text">
-                    **¡Te amo!** Quiero recordarte que el tiempo que pasamos juntos en [Menciona un lugar o fecha especial, ej: 'el café de la esquina'] es mi recuerdo favorito. Eres mi lugar seguro.
+            <div class="card-content">
+                <p>Mi amor,</p>
+                
+                <p>
+                    Desde el día que te conocí, mi mundo se llenó de un color que no sabía que existía. No hay día en que tu risa, tu inteligencia y tu bondad no me dejen sin aliento. Eres el recuerdo más hermoso que tengo y la promesa de un futuro que no puedo esperar a vivir.
                 </p>
-                <img src="placeholder_image.jpg" alt="Nuestra Foto Favorita" class="special-image">
+
+                <button id="revealButton">Revelar Secreto ✨</button>
+
+                <div id="hiddenMessage" class="hidden">
+                    <p class="secret-text">
+                        **¡Te amo!** Quiero recordarte que el tiempo que pasamos juntos en [Menciona un lugar o fecha especial, ej: 'el café de la esquina'] es mi recuerdo favorito. Eres mi lugar seguro.
+                    </p>
+                    <img src="placeholder_image.jpg" alt="Nuestra Foto Favorita" class="special-image"> 
+                </div>
+
+                <p class="final-paragraph">
+                    Gracias por ser tú.
+                </p>
             </div>
 
-            <p class="final-paragraph">
-                Gracias por ser tú.
-            </p>
+            <footer class="card-footer">
+                <p>Con todo mi amor,</p>
+                <p class="signature">Tu [Tu Apodo Cariñoso]</p>
+            </footer>
         </section>
-
-        <footer class="card-footer">
-            <p>Con todo mi amor,</p>
-            <p class="signature">Tu [Tu Apodo Cariñoso]</p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

@@ -1,5 +1,5 @@
 // 1. EFECTO MÁQUINA DE ESCRIBIR EN EL TÍTULO
-const textToType = "Una Carta de Amor para la persona más maravillosa";
+const textToType = "Una Carta para el hombre más maravilloso del mundo";
 const headerElement = document.getElementById('header-text');
 let i = 0;
 

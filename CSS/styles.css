@@ -162,3 +162,27 @@ body {
     margin-top: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*
+================================
+4. ESTILOS ESPECÍFICOS PARA LA VISTA DE PLAYLISTS
+================================
+*/
+
+.playlist-view {
+    /* Hacemos el contenedor más ancho para la playlist de Spotify */
+    max-width: 900px;
+}
+
+.playlist-view iframe {
+    /* Asegura que el iframe (la playlist) sea responsivo */
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.playlist-view .card-header h1 {
+    /* Ajuste para que el título no tenga el efecto de cursor */
+    font-size: 2em;
+    text-align: center;
+}
